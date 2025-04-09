@@ -9,7 +9,7 @@ const MovieDetailPage = () => {
   const { id } = useParams();
 
   const fetchData =async()=>{
-    const cdata = await axios.get("http://www.omdbapi.com/?apikey=11c33351&i="+id);
+    const cdata = await axios.get("https://www.omdbapi.com/?apikey=11c33351&i="+id);
    // setApiData(cdata.data);
     const indv = cdata.data;
    
