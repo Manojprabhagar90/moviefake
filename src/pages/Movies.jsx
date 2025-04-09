@@ -15,7 +15,7 @@ const Movies = (typeselectedValue) => {
     const fetchData =async()=>{
        
        
-       const cdata = await axios.get(`http://www.omdbapi.com/?apikey=11c33351&type=${typeselectedValue.typeselectedValue}&s=${search}&page=${currentPage}`);
+       const cdata = await axios.get(`https://www.omdbapi.com/?apikey=11c33351&type=${typeselectedValue.typeselectedValue}&s=${search}&page=${currentPage}`);
         const indv = cdata.data.Search;
  
         setApiData(indv);
